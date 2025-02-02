@@ -19,83 +19,92 @@
                 <li><a href="experimentPage.html"> Experiment Page </a></li>
               </ul>
         </nav>
+
+        <label for="theme">Select a theme:</label> 
+        <select id="theme">
+            <option value="light">Light Mode</option>
+            <option value="dark">Dark Mode</option>
+        </select>
+
     </header>
 
-    <img src="../assets/disneyHeadshot.jpg" alt="Headshot of Haley Nguyen" class="headshot">
+    <img src="../assets/disneyHeadshot.jpg" alt="Headshot of Haley Nguyen" width="300" height="450" class="headshot">
 
     <main>
         <h1> Hello, <br> I'm Haley Nguyen. </h1>
         <h2>[short description]</h2>
     </main>
 
+    <hr>
 
     <h2> Contact Me! </h2>
     <h4>haley.nguyen821@gmail.com</h4>
     <h4>(818) 319 - 3961 </h4>
-    <p> Feel free to reach out to me with the email or phone number I have provided above! </p>
 
     <section class="quickContactSection">
         <div class="container">
-            <h1>Send me a quick message!</h1>
-            <p>Fill out this form to send me a quick message</p>
 
-            <form>
-                <div class="formGroup">
-                    <label for="name">Name*</label>
-                    <input 
-                        type="text"
-                        name="name"
-                        id="name"
-                        required
-                        class="formElement"
-                        placeholder="Type your name!"/>
-                </div>
+            <a href="#contactForm"><button> Send me a quick message!</button></a>
 
-                <div class="formGroup">
-                    <label for="email">Email address*</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        required
-                        class="formElement"
-                        placeholder="Enter your email address!"/>
-                </div>
+            <dialog id="contactForm">
+                <p>Fill out this form to send me a quick message</p>
+                <form method="dialog">
+                    <fieldset> 
+                        <legend>Contact Information</legend>
+                        <div class="formGroup">
+                            <label for="name">Name*</label>
+                            <input 
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                                class="formElement"
+                                placeholder="Type your name!"/>
+                        </div>
+    
+                        <div class="formGroup">
+                            <label for="email">Email address*</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                class="formElement"
+                                placeholder="Enter your email address!"/>
+                        </div>
+    
+                        <div class="formGroup">
+                            <label for="email">Company name</label>
+                            <input
+                                type="text"
+                                name="companyName"
+                                id="companyName"
+                                class="formElement"
+                                placeholder="Enter your company name!"/>
+                        </div>
+    
+                        <div class="formGroup">
+                            <label for="message">What message do you want to send?</label> 
+                            <textarea id="message" name="message" rows="5" cols="33" placeholder="Type your message here..." required></textarea>
+                        </div>
+    
+                        <div class="submit">
+                            <input type="submit" value="Send Message"/>
+                        </div>
+    
+                    </fieldset>
+                </form>
 
-                <div class="formGroup">
-                    <label for="email">Company name</label>
-                    <input
-                        type="text"
-                        name="companyName"
-                        id="companyName"
-                        class="formElement"
-                        placeholder="Enter your company name!"/>
-                </div>
+                <button id="closeButton">Close</button>
 
-                <div class="formGroup">
-                    <label for="message">What message do you want to send?</label>
-                    <input
-                    type="text"
-                    name="message"
-                    id="message"
-                    required
-                    class="formElement"
-                    placeholder="Message"/>
-                </div>
-
-                <div class="submit">
-                    <input type="submit" value="Send Message"/>
-                </div>
-
-            </form>
-
+            </dialog>
         </div>
     </section>
 
     <footer>
-        <a href="https://www.linkedin.com/in/haley-nguyen-409bb2258/"> <img src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="LinkedIn icon"> </a>
-        <a href="https://github.com/nguyenhaley"> <img src="https://static-00.iconduck.com/assets.00/github-inverted-icon-1024x996-daf8vdjl.png" alt="Github icon"> </a>
-        <a href="https://www.instagram.com/n.haley_/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram icon"> </a>
+        <a href="https://www.linkedin.com/in/haley-nguyen-409bb2258/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon" width="40" height="40"></a>
+        <a href="https://github.com/nguyenhaley"><img src="https://static-00.iconduck.com/assets.00/github-inverted-icon-1024x996-daf8vdjl.png" alt="Github icon" width="40" height="40"></a>
+        <a href="https://www.instagram.com/n.haley_/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram icon" width="40" height="40"></a>
     </footer>
 
 </body>
