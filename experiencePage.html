@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="description" content="Experience page for portfolio">
     <title> Experience Page </title>
+
+    <style>
+        .hoverTitle, .popup, nav, .timeline-content {
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Homepage</li>
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="resumePage.html">Resume</a></li>
                 <li><a href="experiencePage.html">Experience</a></li>
                 <li><a href="aboutMePage.html">About Me</a></li>
@@ -19,6 +27,34 @@
                 <li><a href="experimentPage.html"> Experiment Page </a></li>
               </ul>
         </nav>
+
+        <section class="keyboardHoverableInfo">
+            <div class="hoverTitle"> <b> Keyboard shortcuts</b> </div>
+            <div class="popup">
+                <h1>Keyboard shortcuts</h1>
+                <h3>MacOS</h3>
+                <ul>
+                    <li> Press <kbd>CMD</kbd> + <kbd>1</kbd> to access the homepage </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>2</kbd> to access the resume page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>3</kbd> to access the experiences page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>4</kbd> to access the about me page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>5</kbd> to access the hobbies/interests page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>6</kbd> to access the projects page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>7</kbd> to access the peek into my life page </li>
+                </ul>
+                <h3>Windows/Linux</h3>
+                <ul>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>1</kbd> to access the homepage </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>2</kbd> to access the resume page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>3</kbd> to access the experiences page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>4</kbd> to access the about me page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>5</kbd> to access the hobbies/interests page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>6</kbd> to access the projects page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>7</kbd> to access the peek into my life page </li>
+                </ul>
+            </div>
+        </section>
+
     </header>
 
     <div class="timeline-wrapper">
@@ -27,29 +63,38 @@
 
             <li>
                 <div class="timeline-content">
-                    <h1>Heading 1</h1>
-                    <p>[decription]</p>
+                    <h1>ACM (Association for Computing Machinery)</h1>
+                    <p>Date: September/2023 - September/2024</p>
+                    <p> Teamwork and industry experience - Active member </p>
+                    <ul>
+                        <li>Participated in meetings and workshops as an active member</li>
+                        <li>Completed a project with 3 other members</li>
+                        <li>Reconstructed a calorie-counting app
+                            <ul>
+                                <li>Assisted in the application's front-end development</li>
+                                <li>Utilized HTML, CSS, JS, React</li>
+                            </ul>
+
+                        </li>
+                    </ul>
                 </div>
             </li>
 
             <li>
                 <div class="timeline-content">
-                    <h1>Heading 2</h1>
-                    <p>[decription]</p>
-                </div>
-            </li>
-
-            <li>
-                <div class="timeline-content">
-                    <h1>Heading 3</h1>
-                    <p>[decription]</p>
+                    <h1>UCSD Recreation Events Assistant</h1>
+                    <p>Date: September/2023 - Present </p>
+                    <p> Communication and teamwork experience - Employee </p>
+                    <ul>
+                        <li>Assisted in setting up for school events and sports games alongside team members</li>
+                        <li>Helped foster a safe environment for students to enjoy and participate in activities </li>
+                    </ul>
                 </div>
             </li>
 
           </ul>
       </div>
     </div>
-      
 
 </body>
 </html>

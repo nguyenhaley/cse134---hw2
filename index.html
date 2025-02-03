@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="description" content="Portfolio homepage">
     <title> Homepage </title>
+
+    <style>
+        .hoverTitle, .popup, nav {
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+
+    <script>
+        // This script would provide the hover functionality for my keyboard shortcuts info
+        // It would also allow me to open and close the dialog box I have created for users who wish to send me a quick message
+    </script>
+
 </head>
 <body>
 
@@ -26,25 +39,57 @@
             <option value="dark">Dark Mode</option>
         </select>
 
+        <section class="keyboardHoverableInfo">
+            <div class="hoverTitle" > <b> Keyboard shortcuts</b> </div>
+            <div class="popup">
+                <h1>Keyboard shortcuts</h1>
+                <h3>MacOS</h3>
+                <ul>
+                    <li> Press <kbd>CMD</kbd> + <kbd>1</kbd> to access the homepage </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>2</kbd> to access the resume page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>3</kbd> to access the experiences page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>4</kbd> to access the about me page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>5</kbd> to access the hobbies/interests page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>6</kbd> to access the projects page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>7</kbd> to access the peek into my life page </li>
+                </ul>
+                <h3>Windows/Linux</h3>
+                <ul>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>1</kbd> to access the homepage </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>2</kbd> to access the resume page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>3</kbd> to access the experiences page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>4</kbd> to access the about me page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>5</kbd> to access the hobbies/interests page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>6</kbd> to access the projects page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>7</kbd> to access the peek into my life page </li>
+                </ul>
+            </div>
+        </section>
+
     </header>
 
     <img src="../assets/disneyHeadshot.jpg" alt="Headshot of Haley Nguyen" width="300" height="450" class="headshot">
 
     <main>
         <h1> Hello, <br> I'm Haley Nguyen. </h1>
-        <h2>[short description]</h2>
+        <p>
+            Welcome to my portfolio! I am a third-year student at the University of California, San Diego <abbr>(UCSD)</abbr> studying
+            <b> computer science </b> and <b> cognitive science </b> with a specialization in design and interaction.
+        </p>
     </main>
 
     <hr>
 
-    <h2> Contact Me! </h2>
-    <h4>haley.nguyen821@gmail.com</h4>
-    <h4>(818) 319 - 3961 </h4>
+    <h2> <strong> Contact Me! </strong></h2>
+    <address>
+        <a href="mailto:haley.nguyen821@gmail.com">haley.nguyen821@gmail.com</a> <br>
+        <a href="tel:+18183193961">+1 (818) 319 - 3961 </a>
+    </address>
 
     <section class="quickContactSection">
         <div class="container">
 
-            <a href="#contactForm"><button> Send me a quick message!</button></a>
+            <a href="#contactForm">Send me a quick message!</a>
 
             <dialog id="contactForm">
                 <p>Fill out this form to send me a quick message</p>

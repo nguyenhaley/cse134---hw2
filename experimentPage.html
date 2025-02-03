@@ -3,13 +3,21 @@
 <head>
     <meta name="description" content="Experiments page to test out HTML tags">
     <title> Experiment Page </title>
+
+    <style>
+        .hoverTitle, .popup, nav {
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Homepage</li>
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="resumePage.html">Resume</a></li>
                 <li><a href="experiencePage.html">Experience</a></li>
                 <li><a href="aboutMePage.html">About Me</a></li>
@@ -19,9 +27,43 @@
                 <li><a href="experimentPage.html"> Experiment Page </a></li>
               </ul>
         </nav>
+
+        <section class="keyboardHoverableInfo">
+            <div class="hoverTitle"> <b> Keyboard shortcuts</b> </div>
+            <div class="popup">
+                <h1>Keyboard shortcuts</h1>
+                <h3>MacOS</h3>
+                <ul>
+                    <li> Press <kbd>CMD</kbd> + <kbd>1</kbd> to access the homepage </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>2</kbd> to access the resume page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>3</kbd> to access the experiences page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>4</kbd> to access the about me page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>5</kbd> to access the hobbies/interests page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>6</kbd> to access the projects page </li>
+                    <li> Press <kbd>CMD</kbd> + <kbd>7</kbd> to access the peek into my life page </li>
+                </ul>
+                <h3>Windows/Linux</h3>
+                <ul>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>1</kbd> to access the homepage </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>2</kbd> to access the resume page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>3</kbd> to access the experiences page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>4</kbd> to access the about me page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>5</kbd> to access the hobbies/interests page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>6</kbd> to access the projects page </li>
+                    <li> Press <kbd>CTRL</kbd> + <kbd>7</kbd> to access the peek into my life page </li>
+                </ul>
+            </div>
+        </section>
+
     </header>
 
     <h1>Experimenting with HTML tags</h1>
+
+    <section class="iAndEmTag">
+        <p><b>Using the i and em tag: </b></p>
+        <p>I didn't think that <i>my portfolio</i> <em>needed</em> these tags which is why I decided to put them on this page! The use of italics
+        seems unnecessary when I can just underline or bold words.</p>
+    </section>
 
     <section class="codeTag">
         <p> <b>Using the code tag: </b> <br> 
@@ -49,6 +91,20 @@
           </figure>
     </section>
 
+    <section class="canvasTag">
+        <p><b>Using the canvas tag:</b></p>
+        <canvas width="150" height="150">
+            This will show a black rectangle.
+        </canvas>
+    </section>
+
+    <script>
+        const canvas = document.querySelector("canvas");
+        const context = canvas.getContext("2d");
+        context.fillStyle = "black";
+        context.fillRect(20, 20, 100, 100);
+    </script>
+
     <section class="optgroupTag">
         <p><b>Using the optgroup tag:</b></p>
         <label for="language-select">Choose the programming language you are the strongest in:</label>
@@ -63,6 +119,22 @@
                 <option>Other</option>
             </optgroup>
         </select>
+    </section>
+
+    <section class="datalistTag">
+        <p><b>Using the datalist tag: </b></p>
+        <label for="dog-breed-choice">Choose a dog breed:</label>
+        <input list="dog-breeds" id="dog-breed-choice" name="dog-breed-choice" />
+
+        <datalist id="dog-breeds">
+            <option value="Golden Retriever"></option>
+            <option value="Huskey"></option>
+            <option value="Shih Tzu"></option>
+            <option value="Pomeranian"></option>
+            <option value="Bulldog"></option>
+            <option value="Shiba Inu"></option>
+            <option value="Dachsund"></option>
+        </datalist>
     </section>
 
     <section class="tableTag">
@@ -118,7 +190,21 @@
         <ins><p>I think dogs are the best pet to keep at home because of how cute they are!</p></ins>
     </section>
 
-    
+    <section>
+        <p><b>Using the dl, dt, dd tag:</b></p>
+        <dl>
+            <dt>Hobbies</dt>
+            
+            <dt>Gym</dt>
+            <dd>I love working out when I have the time to as I find it super rewarding and stress-reliving. </dd>
+            <dt>Reading</dt>
+            <dd>I love reading fantasy books as I have been trying to get into high fantasy books such as Mistborn by Brandon Sanderson. </dd>
+            <dt>Going out to try new food places</dt>
+            <dd> Whether it be with family or friends, I love to explore the city I'm in and try new restaurants or cafes. </dd>
+            
+        </dl>
+    </section>
+
 
 </body>
 </html>
