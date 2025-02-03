@@ -57,14 +57,6 @@
             </div>
         </section>
 
-        <search>
-            <form>
-              <label for="query">Find a project</label>
-              <input id="query" name="q" type="search">
-              <button type="submit">Go!</button>
-            </form>
-        </search>
-
     </header>
 
     <h1>Experimenting with HTML tags</h1>
@@ -79,6 +71,18 @@
         }
         customElements.define("hello-world", HelloWorld);
     </script>
+
+    <section class="searchTag">
+            <h2>Search for a specific project: </h2>
+            <search>
+                <form>
+                <label for="query">Find a project</label>
+                <input id="query" name="q" type="search">
+                <button type="submit">Go!</button>
+                </form>
+            </search>
+    </section>
+
 
     <section class="iAndEmTag">
         <p><b>Using the i and em tag: </b></p>
