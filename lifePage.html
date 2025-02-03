@@ -9,6 +9,17 @@
             border-color: black;
             border-style: solid;
         }
+
+        class-card {
+            background-color: lightgray;
+            border-color: black;
+            border-radius: 8px;
+        }
+
+        class-card .courseName {
+            font-weight: bold;
+        }
+
     </style>
 
 </head>
@@ -62,30 +73,27 @@
         <p>Last updated: February 2, 2025</p>
     </hgroup>
 
-    <section class="currentCourses">
-        <h1> Courses I am currently taking: </h1>
+    <h2>Courses I am currently taking:</h2>
+    <class-card>
+        <div class="courseName"> CSE134B: <span> Web Client Languages</span></div>
+        <div class="courseDetails">[short description]</div>
+    </class-card>
 
-        <div class="courseCard">
-            <h4>CSE134B: Web Client Languages</h4>
-            <p>[description]</p>
-        </div>
+    <class-card>
+        <div class="courseName"> COGS101B: <span> TBD </span></div>
+        <div class="courseDetails">[short description]</div>
+    </class-card>
 
-        <div class="courseCard">
-            <h4>COGS101B: ...</h4>
-            <p>[description]</p>
-        </div>
+    <class-card>
+        <div class="courseName"> COGS100: <span> TBD</span></div>
+        <div class="courseDetails">[short description]</div>
+    </class-card>
 
-        <div class="courseCard">
-            <h4>COGS100: ...</h4>
-            <p>[description]</p>
-        </div>
+    <class-card>
+        <div class="courseName"> COGS13: <span> TBD</span></div>
+        <div class="courseDetails">[short description]</div>
+    </class-card>
 
-        <div class="courseCard">
-            <h4>COGS13: ...</h4>
-            <p>[description]</p>
-        </div>
-
-    </section>
 
     <section class="currentProjects">
         <h1>Project(s) that I am currently working on: </h1>
