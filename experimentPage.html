@@ -59,6 +59,17 @@
 
     <h1>Experimenting with HTML tags</h1>
 
+    <hello-world> </hello-world>
+    <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super(); 
+                console.log("Hello, world!"); 
+            }
+        }
+        customElements.define("hello-world", HelloWorld);
+    </script>
+
     <section class="iAndEmTag">
         <p><b>Using the i and em tag: </b></p>
         <p>I didn't think that <i>my portfolio</i> <em>needed</em> these tags which is why I decided to put them on this page! The use of italics
@@ -89,6 +100,13 @@
             <figcaption>Listen to this Christmas jingle:</figcaption>
             <audio controls src="https://s3.amazonaws.com/citizen-dj-assets.labs.loc.gov/audio/items/loc-fma/fma-184032.mp3"></audio>
           </figure>
+    </section>
+
+    <section class="videoTag">
+        <p><b>Using the video tag:</b></p>
+        <video controls width="250">
+            <source src="" type="video/mp4"/>
+        </video>
     </section>
 
     <section class="canvasTag">
